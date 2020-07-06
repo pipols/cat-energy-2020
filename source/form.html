@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a href="" class="main-navigation__logo-link">
+        <img src="./img/logo-mobile.svg" alt="" class="main-navigation__logo logo" width="191" height="38" />
+      </a>
+      <button class="main-navigation__toggle btn" type="button">
+        <img class="main-navigation__toggle-open" src="./img/inline-svg/icon-mobile-menu.svg" alt="" width="24"
+          height="18" />
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="order">
+      <h1 class="oredr__title"></h1>
+      <form action="" class="order__form">
+        <p class="order__intro"></p>
+        <div class="order__groop-wrap">
+          <fieldset>
+            <ul class="order__list">
+              <li class="order__item">
+                <label class="order__label" for="name">ffff</label>
+                <input id="name" name="name" type="text" />
+              </li>
+              <li class="order__item">
+                <label class="order__label" for="weight"></label>
+                <input id="weight" name="weight" type="number" />
+              </li>
+              <li class="order__item">
+                <label class="order__label" for="age"></label>
+                <input id="age" name="age" type="number" />
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div class="order__groop-wrap">
+          <fieldset>
+            <ul class="order__list">
+              <li class="order__item">
+                <label for="slim">похудение</label>
+                <input type="radio" id="slim" name="program" value="slim" />
+              </li>
+              <li class="order__item">
+                <label for="pro">набор массы</label>
+                <input type="radio" id="pro" name="program" value="pro" />
+              </li>
+              <li class="order__item">
+                <label for="question">не знаю (нужен ваш совет)</label>
+                <input type="radio" id="question" name="program" value="question" />
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="order__groop-wrap">
+          <fieldset>
+            <legend>Контактные данные (владельца кота)</legend>
+            <ul class="order__list" role="none">
+              <li class="order__item">
+                <label for="email">e-mail:*</label>
+                <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" />
+              </li>
+              <li class="order__item">
+                <label for="tel">телефон</label>
+                <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" />
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="order__groop-wrap">
+          <fieldset>
+            <legend>Комментарий</legend>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+          </fieldset>
+        </div>
+        <div class="order__groop-wrap">
+          <fieldset>
+            <ul>
+              <li>
+                <label for="sweetener">сахарозаменитель</label><input id="sweetener" type="checkbox" name="sweetener" />
+              </li>
+              <li>
+                <label for="water">питьевая вода</label><input id="water" type="checkbox" name="water" />
+              </li>
+              <li>
+                <label for="milk">молоко</label><input id="milk" type="checkbox" name="milk" />
+              </li>
+              <li>
+                <label for="vitamins">витамины</label><input id="vitamins" type="checkbox" name="vitamins" />
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <button class="order__submit btn" type="submit">
+          отправить заявку
+        </button>
+        <p class="order__footnote">* — Обязательные поля</p>
+      </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrap">
+      <div class="footer-logo logo">
+        <a class="footer-logo__link" href="">
+          <img class="footer-logo__img" src="./img/inline-svg/logo-footer.svg" alt="" width="128" height="24" />
+        </a>
+      </div>
+      <section class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href=""><img src="./img/inline-svg/icon-vk.svg" alt=""
+                class="social__img social__img--vk" /></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href=""><img src="./img/inline-svg/icon-insta.svg" alt=""
+                class="social__img social__img--inst" /></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href=""><img src="./img/inline-svg/icon-fb.svg" alt=""
+                class="social__img social__img--fb" /></a>
+          </li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <a href="" class="copyright__link">
+          <span class="copyright__text">HTML Academy</span>
+        </a>
+        <a href="" class="copyright__link">
+          <img class="copyright__img" src="./img/inline-svg/htmlacademy.svg" alt="" />
+        </a>
+      </section>
+    </div>
+  </footer>
+</body>
+
+</html>
