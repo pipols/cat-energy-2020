@@ -1,106 +1,109 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a href="" class="main-navigation__logo-link">
-          <img
-            src="./img/logo-mobile.svg"
-            alt=""
-            class="main-navigation__logo logo"
-            width="191"
-            height="38"
-          />
-        </a>
-        <button class="main-navigation__toggle btn" type="button">
-          <img
-            class="main-navigation__toggle-open"
-            src="./img/inline-svg/icon-mobile-menu.svg"
-            alt=""
-            width="24"
-            height="18"
-          />
-        </button>
-      </nav>
-    </header>
-    <main>
-      <section class="intro">
-        <div class="intro__wrap">
-          <h1 class="intro__title">Функциональное питание для котов</h1>
-          <p class="intro__text">Занялся собой? Займись котом!</p>
-          <img src="./img/index-can-mobile@1x.png" alt="" />
-          <a class="intro__link btn" href="">Подобрать программу</a>
-        </div>
-      </section>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-      <section class="course">
-        <ul class="course__list">
-          <li class="course__item">
-            <h2 class="course__title">Похудение</h2>
-            <div class="course__img course__img--slim"></div>
-            <p class="course__text">
-              Ваш кот весит больше собаки и почти утратил способность лазить по
-              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
-              сбросить лишний вес.
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a href="" class="main-navigation__logo-link">
+        <img src="./img/logo-mobile.svg" alt="" class="main-navigation__logo logo" width="191" height="38" />
+      </a>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a href="index.html" class="main-navigation__link">главная</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="catalog.html" class="main-navigation__link">каталог продукции</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="form.html" class="main-navigation__link">подбор программы</a>
+        </li>
+      </ul>
+      <button class="main-navigation__toggle btn" type="button">
+        <img class="main-navigation__toggle-open" src="./img/inline-svg/icon-mobile-menu.svg" alt="" width="24"
+          height="18" />
+        <img class="main-navigation__toggle-close visuallyhidden" src="./img/inline-svg/icon-close.svg" alt=""
+          width="20" height="20" />
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="intro__wrap">
+        <h1 class="intro__title">Функциональное питание для котов</h1>
+        <p class="intro__text">Занялся собой? Займись котом!</p>
+        <img src="./img/index-can-mobile@1x.png" alt="" />
+        <a class="intro__link btn" href="">Подобрать программу</a>
+      </div>
+    </section>
+
+    <section class="course">
+      <ul class="course__list">
+        <li class="course__item">
+          <h2 class="course__title">Похудение</h2>
+          <div class="course__img course__img--slim"></div>
+          <p class="course__text">
+            Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
+            сбросить лишний вес.
+          </p>
+          <a href="catalog.html" class="course__link">Каталог Slim</a>
+        </li>
+        <li class="course__item">
+          <h2 class="course__title">Набор Массы</h2>
+          <div class="course__img course__img--pro"></div>
+          <p class="course__text">
+            Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+            Energy Pro поможет вашему коту нарастить необходимые мышцы!
+          </p>
+          <a href="catalog.html" class="course__link">Каталог Pro</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages-wrap">
+        <h2 class="advantages__title">Как это работает</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantages__img advantages__img--leaf"></div>
+            <p class="advantages__text">
+              Функциональное питание содержит только полезные питательные
+              вещества.
             </p>
-            <a href="catalog.html" class="course__link">Каталог Slim</a>
           </li>
-          <li class="course__item">
-            <h2 class="course__title">Набор Массы</h2>
-            <div class="course__img course__img--pro"></div>
-            <p class="course__text">
-              Заработать авторитет среди дворовых котов и даже собак? Серия Cat
-              Energy Pro поможет вашему коту нарастить необходимые мышцы!
+          <li class="advantages__item">
+            <div class="advantages__img advantages__img--powder"></div>
+            <p class="advantages__text">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и
+              готово.
             </p>
-            <a href="catalog.html" class="course__link">Каталог Pro</a>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__img advantages__img--dining"></div>
+            <p class="advantages__text">
+              Замените один-два приема обычной еды на наше функциональное
+              питание.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__img advantages__img--clock"></div>
+            <p class="advantages__text">
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего
+              питомца!
+            </p>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="advantages">
-        <div class="advantages-wrap">
-          <h2 class="advantages__title">Как это работает</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <div class="advantages__img advantages__img--leaf"></div>
-              <p class="advantages__text">
-                Функциональное питание содержит только полезные питательные
-                вещества.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__img advantages__img--powder"></div>
-              <p class="advantages__text">
-                Выпускается в виде порошка, который нужно лишь залить кипятком и
-                готово.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__img advantages__img--dining"></div>
-              <p class="advantages__text">
-                Замените один-два приема обычной еды на наше функциональное
-                питание.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__img advantages__img--clock"></div>
-              <p class="advantages__text">
-                Уже через месяц наслаждайтесь изменениями к лучшему вашего
-                питомца!
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- <section class="example">
+    <!-- <section class="example">
         <ul class="example__list">
           <li class="example__item">
             <strong class="example__fact-number"></strong>
@@ -110,61 +113,41 @@
         <p class="example__result"></p>
         <section class="slider-result"></section>
       </section> -->
-    </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrap">
-        <div class="footer-logo logo">
-          <a class="footer-logo__link" href="">
-            <img
-              class="footer-logo__img"
-              src="./img/inline-svg/logo-footer.svg"
-              alt=""
-              width="128"
-              height="24"
-            />
-          </a>
-        </div>
-        <section class="social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href=""
-                ><img
-                  src="./img/inline-svg/icon-vk.svg"
-                  alt=""
-                  class="social__img social__img--vk"
-              /></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href=""
-                ><img
-                  src="./img/inline-svg/icon-insta.svg"
-                  alt=""
-                  class="social__img social__img--inst"
-              /></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href=""
-                ><img
-                  src="./img/inline-svg/icon-fb.svg"
-                  alt=""
-                  class="social__img social__img--fb"
-              /></a>
-            </li>
-          </ul>
-        </section>
-        <section class="copyright">
-          <a href="" class="copyright__link">
-            <span class="copyright__text">HTML Academy</span>
-          </a>
-          <a href="" class="copyright__link">
-            <img
-              class="copyright__img"
-              src="./img/inline-svg/htmlacademy.svg"
-              alt=""
-            />
-          </a>
-        </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrap">
+      <div class="footer-logo logo">
+        <a class="footer-logo__link" href="">
+          <img class="footer-logo__img" src="./img/inline-svg/logo-footer.svg" alt="" width="128" height="24" />
+        </a>
       </div>
-    </footer>
-  </body>
+      <section class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href=""><img src="./img/inline-svg/icon-vk.svg" alt=""
+                class="social__img social__img--vk" /></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href=""><img src="./img/inline-svg/icon-insta.svg" alt=""
+                class="social__img social__img--inst" /></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href=""><img src="./img/inline-svg/icon-fb.svg" alt=""
+                class="social__img social__img--fb" /></a>
+          </li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <a href="" class="copyright__link">
+          <span class="copyright__text">HTML Academy</span>
+        </a>
+        <a href="" class="copyright__link">
+          <img class="copyright__img" src="./img/inline-svg/htmlacademy.svg" alt="" />
+        </a>
+      </section>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

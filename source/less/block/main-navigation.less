@@ -1,6 +1,43 @@
 .main-navigation {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   min-height: 65px;
+}
+
+.main-navigation__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation__item {
+  .container-mobile();
+  padding: 20px;
+  border-top: 1px solid #cccccc;
+  text-align: center;
+}
+
+.main-navigation__link {
+  color: #111111;
+  font-family: @main-font;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-navigation__logo-link {
+  .container-mobile();
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main-navigation__toggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: #ffffff;
 }

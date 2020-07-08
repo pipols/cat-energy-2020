@@ -1,269 +1,196 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a href="" class="main-navigation__logo-link">
-          <img
-            src="./img/logo-mobile.svg"
-            alt=""
-            class="main-navigation__logo logo"
-            width="191"
-            height="38"
-          />
-        </a>
-        <button class="main-navigation__toggle btn" type="button">
-          <img
-            class="main-navigation__toggle-open"
-            src="./img/inline-svg/icon-mobile-menu.svg"
-            alt=""
-            width="24"
-            height="18"
-          />
-        </button>
-      </nav>
-    </header>
-    <main>
-      <section class="order">
-        <form action="" class="order__form">
-          <div class="order__intro-wrap">
-            <h1 class="oredr__title">Подбор программы</h1>
-            <p class="order__intro">
-              заполните анкету и мы подберем <br />
-              программу питания для вашего кота
-            </p>
-          </div>
-          <div class="order__groop-wrap">
-            <fieldset class="order__fieldset">
-              <div class="order__fieldset-wrap">
-                <ul class="order__list">
-                  <li class="order__item">
-                    <label class="order__label" for="name">Имя:*</label>
-                    <input
-                      id="name"
-                      name="name"
-                      type="text"
-                      placeholder="барсик"
-                    />
-                  </li>
-                  <li class="order__item">
-                    <label class="order__label" for="weight">Вес (кг):*</label>
-                    <input
-                      id="weight"
-                      name="weight"
-                      type="number"
-                      placeholder="7"
-                    />
-                  </li>
-                  <li class="order__item">
-                    <label class="order__label" for="age">Возраст (лет):</label>
-                    <input id="age" name="age" type="number" placeholder="7" />
-                  </li>
-                </ul>
-              </div>
-            </fieldset>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-          <div class="order__groop-wrap">
-            <fieldset class="order__fieldset">
-              <div class="order__fieldset-wrap">
-                <ul class="order__list">
-                  <li class="order__item order__item--program">
-                    <input type="radio" id="slim" name="program" value="slim" />
-                    <label class="order__label order__label--program" for="slim"
-                      >похудение</label
-                    >
-                  </li>
-                  <li class="order__item order__item--program">
-                    <input type="radio" id="pro" name="program" value="pro" />
-                    <label class="order__label order__label--program" for="pro"
-                      >набор массы</label
-                    >
-                  </li>
-                  <li class="order__item order__item--program">
-                    <input
-                      type="radio"
-                      id="question"
-                      name="program"
-                      value="question"
-                    />
-                    <label
-                      class="order__label order__label--program"
-                      for="question"
-                      >не знаю (нужен ваш совет)</label
-                    >
-                  </li>
-                </ul>
-              </div>
-            </fieldset>
-          </div>
-          <div class="order__groop-wrap">
-            <fieldset class="order__fieldset">
-              <div class="order__fieldset-wrap">
-                <legend class="order__fieldset-title">
-                  Контактные данные <br />
-                  (владельца кота)
-                </legend>
-                <ul class="order__list" role="none">
-                  <li class="order__item">
-                    <label class="order__label" for="email">e-mail:*</label>
-                    <input
-                      class="order__label"
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="kuklachev@gmail.com"
-                    />
-                  </li>
-                  <li class="order__item">
-                    <label class="order__label" for="tel">телефон</label>
-                    <input
-                      type="tel"
-                      name="tel"
-                      id="tel"
-                      placeholder="8 (960) 900-60-90"
-                    />
-                  </li>
-                </ul>
-              </div>
-            </fieldset>
-          </div>
-          <div class="order__groop-wrap">
-            <fieldset class="order__fieldset">
-              <div class="order__fieldset-wrap">
-                <legend class="order__fieldset-title">Комментарий</legend>
-                <textarea
-                  class="order__comment"
-                  name="comment"
-                  id="comment"
-                  cols="30"
-                  rows="10"
-                ></textarea>
-              </div>
-            </fieldset>
-          </div>
-          <div class="order__groop-wrap">
-            <fieldset class="order__fieldset order__fieldset--additionally">
-              <div class="order__fieldset-wrap">
-                <legend class="order__fieldset-title">Дополнительно</legend>
-                <ul class="order__list">
-                  <li class="order__item order__item--additionally">
-                    <input id="sweetener" type="checkbox" name="sweetener" />
-                    <label
-                      class="order__label order__label--additionally"
-                      for="sweetener"
-                      >сахарозаменитель</label
-                    >
-                  </li>
-                  <li class="order__item order__item--additionally">
-                    <input id="water" type="checkbox" name="water" />
-                    <label
-                      class="order__label order__label--additionally"
-                      for="water"
-                      >питьевая вода</label
-                    >
-                  </li>
-                  <li class="order__item order__item--additionally">
-                    <input id="milk" type="checkbox" name="milk" />
-                    <label
-                      class="order__label order__label--additionally"
-                      for="milk"
-                      >молоко</label
-                    >
-                  </li>
-                  <li class="order__item order__item--additionally">
-                    <input id="vitamins" type="checkbox" name="vitamins" />
-                    <label
-                      class="order__label order__label--additionally"
-                      for="vitamins"
-                      >витамины</label
-                    >
-                  </li>
-                </ul>
-              </div>
-            </fieldset>
-          </div>
-          <div class="order__footer-wrap">
-            <button class="order__submit btn" type="submit">
-              отправить заявку
-            </button>
-            <p class="order__footnote">* — Обязательные поля</p>
-          </div>
-        </form>
-      </section>
-      <section class="partnership">
-        <div class="partnership__wrap">
-          <p class="partnership__text">приглашаем к сотрудничеству дилеров!</p>
-          <p class="partnership__address">
-            ул. Большая <br />
-            Конюшенная, д. 19/8 <br />
-            Санкт-Петербург
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a href="" class="main-navigation__logo-link">
+        <img src="./img/logo-mobile.svg" alt="" class="main-navigation__logo logo" width="191" height="38" />
+      </a>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a href="index.html" class="main-navigation__link">главная</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="catalog.html" class="main-navigation__link">каталог продукции</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="form.html" class="main-navigation__link">подбор программы</a>
+        </li>
+      </ul>
+      <button class="main-navigation__toggle btn" type="button">
+        <img class="main-navigation__toggle-open" src="./img/inline-svg/icon-mobile-menu.svg" alt="" width="24"
+          height="18" />
+        <img class="main-navigation__toggle-close visuallyhidden" src="./img/inline-svg/icon-close.svg" alt=""
+          width="20" height="20" />
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="order">
+      <form action="" class="order__form">
+        <div class="order__intro-wrap">
+          <h1 class="oredr__title">Подбор программы</h1>
+          <p class="order__intro">
+            заполните анкету и мы подберем <br />
+            программу питания для вашего кота
           </p>
         </div>
-      </section>
-      <section class="map"></section>
-    </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrap">
-        <div class="footer-logo logo">
-          <a class="footer-logo__link" href="">
-            <img
-              class="footer-logo__img"
-              src="./img/inline-svg/logo-footer.svg"
-              alt=""
-              width="128"
-              height="24"
-            />
-          </a>
+        <div class="order__groop-wrap">
+          <fieldset class="order__fieldset">
+            <div class="order__fieldset-wrap">
+              <ul class="order__list">
+                <li class="order__item">
+                  <label class="order__label" for="name">Имя:*</label>
+                  <input id="name" name="name" type="text" placeholder="барсик" />
+                </li>
+                <li class="order__item">
+                  <label class="order__label" for="weight">Вес (кг):*</label>
+                  <input id="weight" name="weight" type="number" placeholder="7" />
+                </li>
+                <li class="order__item">
+                  <label class="order__label" for="age">Возраст (лет):</label>
+                  <input id="age" name="age" type="number" placeholder="7" />
+                </li>
+              </ul>
+            </div>
+          </fieldset>
         </div>
-        <section class="social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href=""
-                ><img
-                  src="./img/inline-svg/icon-vk.svg"
-                  alt=""
-                  class="social__img social__img--vk"
-              /></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href=""
-                ><img
-                  src="./img/inline-svg/icon-insta.svg"
-                  alt=""
-                  class="social__img social__img--inst"
-              /></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href=""
-                ><img
-                  src="./img/inline-svg/icon-fb.svg"
-                  alt=""
-                  class="social__img social__img--fb"
-              /></a>
-            </li>
-          </ul>
-        </section>
-        <section class="copyright">
-          <a href="" class="copyright__link">
-            <span class="copyright__text">HTML Academy</span>
-          </a>
-          <a href="" class="copyright__link">
-            <img
-              class="copyright__img"
-              src="./img/inline-svg/htmlacademy.svg"
-              alt=""
-            />
-          </a>
-        </section>
+
+        <div class="order__groop-wrap">
+          <fieldset class="order__fieldset">
+            <div class="order__fieldset-wrap">
+              <ul class="order__list">
+                <li class="order__item order__item--program">
+                  <input type="radio" id="slim" name="program" value="slim" />
+                  <label class="order__label order__label--program" for="slim">похудение</label>
+                </li>
+                <li class="order__item order__item--program">
+                  <input type="radio" id="pro" name="program" value="pro" />
+                  <label class="order__label order__label--program" for="pro">набор массы</label>
+                </li>
+                <li class="order__item order__item--program">
+                  <input type="radio" id="question" name="program" value="question" />
+                  <label class="order__label order__label--program" for="question">не знаю (нужен ваш совет)</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+        <div class="order__groop-wrap">
+          <fieldset class="order__fieldset">
+            <div class="order__fieldset-wrap">
+              <legend class="order__fieldset-title">
+                Контактные данные <br />
+                (владельца кота)
+              </legend>
+              <ul class="order__list" role="none">
+                <li class="order__item">
+                  <label class="order__label" for="email">e-mail:*</label>
+                  <input class="order__label" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" />
+                </li>
+                <li class="order__item">
+                  <label class="order__label" for="tel">телефон</label>
+                  <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" />
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+        <div class="order__groop-wrap">
+          <fieldset class="order__fieldset">
+            <div class="order__fieldset-wrap">
+              <legend class="order__fieldset-title">Комментарий</legend>
+              <textarea class="order__comment" name="comment" id="comment" cols="30" rows="10"></textarea>
+            </div>
+          </fieldset>
+        </div>
+        <div class="order__groop-wrap">
+          <fieldset class="order__fieldset order__fieldset--additionally">
+            <div class="order__fieldset-wrap">
+              <legend class="order__fieldset-title">Дополнительно</legend>
+              <ul class="order__list">
+                <li class="order__item order__item--additionally">
+                  <input id="sweetener" type="checkbox" name="sweetener" />
+                  <label class="order__label order__label--additionally" for="sweetener">сахарозаменитель</label>
+                </li>
+                <li class="order__item order__item--additionally">
+                  <input id="water" type="checkbox" name="water" />
+                  <label class="order__label order__label--additionally" for="water">питьевая вода</label>
+                </li>
+                <li class="order__item order__item--additionally">
+                  <input id="milk" type="checkbox" name="milk" />
+                  <label class="order__label order__label--additionally" for="milk">молоко</label>
+                </li>
+                <li class="order__item order__item--additionally">
+                  <input id="vitamins" type="checkbox" name="vitamins" />
+                  <label class="order__label order__label--additionally" for="vitamins">витамины</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+        <div class="order__footer-wrap">
+          <button class="order__submit btn" type="submit">
+            отправить заявку
+          </button>
+          <p class="order__footnote">* — Обязательные поля</p>
+        </div>
+      </form>
+    </section>
+    <section class="partnership">
+      <div class="partnership__wrap">
+        <p class="partnership__text">приглашаем к сотрудничеству дилеров!</p>
+        <p class="partnership__address">
+          ул. Большая <br />
+          Конюшенная, д. 19/8 <br />
+          Санкт-Петербург
+        </p>
       </div>
-    </footer>
-  </body>
+    </section>
+    <section class="map"></section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrap">
+      <div class="footer-logo logo">
+        <a class="footer-logo__link" href="">
+          <img class="footer-logo__img" src="./img/inline-svg/logo-footer.svg" alt="" width="128" height="24" />
+        </a>
+      </div>
+      <section class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href=""><img src="./img/inline-svg/icon-vk.svg" alt=""
+                class="social__img social__img--vk" /></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href=""><img src="./img/inline-svg/icon-insta.svg" alt=""
+                class="social__img social__img--inst" /></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href=""><img src="./img/inline-svg/icon-fb.svg" alt=""
+                class="social__img social__img--fb" /></a>
+          </li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <a href="" class="copyright__link">
+          <span class="copyright__text">HTML Academy</span>
+        </a>
+        <a href="" class="copyright__link">
+          <img class="copyright__img" src="./img/inline-svg/htmlacademy.svg" alt="" />
+        </a>
+      </section>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
